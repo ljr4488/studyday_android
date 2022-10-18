@@ -29,6 +29,14 @@
             android:minHeight="48dp" />
 
         <EditText
+            android:id="@+id/signUpPwChk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="패스워드 확인"
+            android:inputType="textPersonName" />
+
+        <EditText
             android:id="@+id/signUpName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,13 +67,6 @@
                 android:hint="회원가입"
                 android:text="회원가입" />
 
-            <Button
-                android:id="@+id/backSign"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="뒤로가기"
-                android:text="뒤로가기" />
         </LinearLayout>
 
     </LinearLayout>

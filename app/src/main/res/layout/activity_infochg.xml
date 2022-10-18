@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".JoinActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,19 +12,45 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/LoginId"
+            android:id="@+id/chgId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="로그인ID"
+            android:hint="아이디"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/Password"
+            android:id="@+id/chgPw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="패스워드"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/chgPwChk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="패스워드 확인"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/chgName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="이름"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/chgAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="주소"
             android:inputType="textPersonName"
             android:minHeight="48dp" />
 
@@ -35,18 +60,14 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnLogOut"
+                android:id="@+id/chg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="로그인" />
+                android:hint="회원정보수정"
+                android:text="회원정보수정" />
 
-            <Button
-                android:id="@+id/btnInfoChg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="회원가입" />
         </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>

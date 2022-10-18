@@ -12,41 +12,24 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/LoginId"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="로그인ID"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/Password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="패스워드"
-            android:inputType="textPersonName"
-            android:minHeight="48dp" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnLogOut"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="로그인" />
+                android:text="로그아웃" />
 
             <Button
-                android:id="@+id/btnSignUp"
+                android:id="@+id/btnInfoChg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="회원가입" />
+                android:text="회원정보수정" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
