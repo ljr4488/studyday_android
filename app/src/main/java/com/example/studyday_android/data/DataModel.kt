@@ -20,6 +20,19 @@ data class JoinData(
     val password: String
 )
 
+data class InfoChg(
+    val `data`: InfoChgData,
+    val description: String
+)
+
+data class InfoChgData(
+    val user_id: Int,
+    val login_id: String,
+    val password: String,
+    val name: String,
+    val address: String
+)
+
 data class PostResult(
     var result_code:String? = null,
     var description:String? = null

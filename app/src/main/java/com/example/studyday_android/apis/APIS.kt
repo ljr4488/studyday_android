@@ -1,5 +1,6 @@
 package com.example.studyday_android.apis
 
+import com.example.studyday_android.data.InfoChg
 import com.example.studyday_android.data.Join
 import com.example.studyday_android.data.PostResult
 import com.example.studyday_android.data.User
@@ -8,10 +9,7 @@ import com.google.gson.GsonBuilder
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Path
+import retrofit2.http.*
 
 interface APIS {
     // RESTful API 호출 interface부
@@ -20,6 +18,9 @@ interface APIS {
 
     @POST("user")
     fun userCreate(@Body join:Join) : Call<PostResult>
+
+    @PUT("user")
+    fun userInfoChg(@Body infoChg:InfoChg) : Call<PostResult>
 
     //////공유 객체로서 사용
     companion object {

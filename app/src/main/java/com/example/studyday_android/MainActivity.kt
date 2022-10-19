@@ -50,10 +50,10 @@ class MainActivity : AppCompatActivity() {
                 override fun onResponse(call: Call<User>, response: Response<User>) {
                     if(response.isSuccessful) {
                         val result: User? = response.body()
+                        val chkUserId : String = result!!.data!!.get("user_id").toString().replace("\"", "")
                         val chkloginId : String = result!!.data!!.get("login_id").toString().replace("\"", "")
                         val chkloginPw : String = result!!.data!!.get("password").toString().replace("\"", "")
                         val chkloginName : String = result!!.data!!.get("name").toString().replace("\"", "")
-                        val chkUserId : String = result!!.data!!.get("user_id").toString().replace("\"", "")
                         if(idStr == chkloginId && pwStr == chkloginPw) {
                             MyApplication.prefs.setString("userId", "${chkUserId}")
                             MyApplication.prefs.setString("loginId", "${chkloginId}")

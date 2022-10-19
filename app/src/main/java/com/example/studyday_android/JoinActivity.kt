@@ -85,6 +85,7 @@ class JoinActivity : AppCompatActivity() {
                 val data = Join(joinData, "OK")
                 api.userCreate(data).enqueue(object : Callback<PostResult> {
                     override fun onResponse(call: Call<PostResult>, response: Response<PostResult>) {
+                        Log.d("data", "${data}")
                         Log.d("Response:: ", response.body().toString())
                         finish()
                     }
