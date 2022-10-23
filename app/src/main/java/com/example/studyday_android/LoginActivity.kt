@@ -16,9 +16,11 @@ class LoginActivity : AppCompatActivity() {
     lateinit var btnInfoChg:Button
     lateinit var dateBtn:Button
     lateinit var timeBtn:Button
+    lateinit var reserveBtn:Button
     var dateString = ""
     var timeString = ""
     lateinit var numPick:NumberPicker
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +30,7 @@ class LoginActivity : AppCompatActivity() {
         btnInfoChg = findViewById<Button>(R.id.btnInfoChg) as Button
         dateBtn = findViewById<Button>(R.id.dateBtn) as Button
         timeBtn = findViewById<Button>(R.id.timeBtn) as Button
+        reserveBtn = findViewById<Button>(R.id.reserveBtn) as Button
 
         dateBtn.setOnClickListener {
             val cal = Calendar.getInstance() // 캘린더 뷰 생성
@@ -73,6 +76,11 @@ class LoginActivity : AppCompatActivity() {
         btnInfoChg.setOnClickListener {
             startActivity(Intent(this@LoginActivity,InfochgActivity::class.java))
         }
+
+        reserveBtn.setOnClickListener {
+            startActivity(Intent(this@LoginActivity,ReserveActivity::class.java))
+        }
+
 
     }
 }

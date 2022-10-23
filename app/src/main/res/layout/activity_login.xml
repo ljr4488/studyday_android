@@ -49,6 +49,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="시간" />
+
+            <Button
+                android:id="@+id/reserveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
         </LinearLayout>
 
     </LinearLayout>

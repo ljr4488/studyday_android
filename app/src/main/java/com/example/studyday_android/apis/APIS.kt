@@ -24,7 +24,7 @@ interface APIS {
 
     //////공유 객체로서 사용
     companion object {
-        private const val BASE_URL = "http://192.168.0.65:8080/api/"
+        private const val BASE_URL = "http://220.85.149.102:8080/api/"
 
         fun create(): APIS {
             val gson :Gson = GsonBuilder().setLenient().create()
