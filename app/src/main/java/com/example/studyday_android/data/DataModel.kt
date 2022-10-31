@@ -8,6 +8,18 @@ data class User(
     val data: JsonObject,
 )
 
+data class Reserve(
+    val description: String,
+    val data: ReserveData
+)
+
+data class ReserveData(
+    val room_id: String,
+    val user_id: String,
+    val reserve_date: String,
+    val start_time: String
+)
+
 data class Join(
     val `data`: JoinData,
     val description: String

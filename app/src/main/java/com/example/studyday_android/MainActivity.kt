@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
 
                 override fun onFailure(call: Call<User>, t: Throwable) {
                     dlg.setTitle("로그인 에러")
-                    dlg.setMessage("통신이 원할하지 않습니다.")
+                    dlg.setMessage("존재하지 않는 계정입니다ㅣ.")
                     dlg.setPositiveButton("확인", DialogInterface.OnClickListener { dialog, which ->
                     })
                     dlg.show()
